@@ -1,0 +1,115 @@
+.app {
+  display: flex;
+  justify-content: center;
+  padding: 40px 10px;
+}
+
+.container {
+  width: 420px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Balance */
+.balance-card {
+  background: #007bff;
+  color: white;
+  padding: 18px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance-card p {
+  font-size: 24px;
+  margin-top: 8px;
+}
+
+/* Summary */
+.summary {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.income {
+  background: #eafaf1;
+  color: green;
+  padding: 12px;
+  border-radius: 8px;
+  width: 48%;
+  text-align: center;
+}
+
+.expense {
+  background: #fdecea;
+  color: red;
+  padding: 12px;
+  border-radius: 8px;
+  width: 48%;
+  text-align: center;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 12px;
+  background: #007bff;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* List */
+.transaction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f7f9fc;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.transaction.income {
+  border-left: 5px solid green;
+}
+
+.transaction.expense {
+  border-left: 5px solid red;
+}
+
+.transaction button {
+  background: red;
+  padding: 6px 10px;
+}
+
+.empty {
+  text-align: center;
+  color: gray;
+}
